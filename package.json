@@ -1,0 +1,37 @@
+{
+  "name": "gulp-node-slate",
+  "version": "0.0.1",
+  "description": "node-slate as a gulp task",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pinntech/gulp-node-slate.git"
+  },
+  "keywords": [
+    "api-documentation",
+    "node-slate",
+    "nodejs",
+    "gulp",
+    "gulpplugin",
+    "slate",
+    "static-site-generator"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pinntech/gulp-node-slate/issues"
+  },
+  "homepage": "https://github.com/pinntech/gulp-node-slate",
+  "devDependencies": {
+    "gulp": "~3.9",
+    "jshint": "~2.9"
+  },
+  "dependencies": {
+    "fs-extra": "~2.1",
+    "gulp-util": "~3.0",
+    "node-slate": "sdelements/node-slate",
+    "through2": "~2.0"
+  }
+}
