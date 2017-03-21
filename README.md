@@ -1,6 +1,5 @@
 <p align=center>
-    <img src=https://raw.githubusercontent.com/lord/img/master/logo-slate.png alt=logo>
-    <br>
+    <img src=https://raw.githubusercontent.com/lord/img/master/logo-slate.png alt=logo><br>
     Slate helps you create beautiful, intelligent, responsive API documentation.
 </p>
 
@@ -56,6 +55,7 @@ source/
     images/
         logo.png
     includes/
+        *.md
     custom.scss
     index.yml
 ```
