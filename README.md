@@ -34,6 +34,8 @@ Otherwise, follow the steps below.
 ```
 $ npm install gulp-node-slate --save-dev
 ```
+Alternatively, you can manually insert `"gulp-node-slate": "~0.0",` into the `devDependencies` of
+your **package.json** and then run `npm install`.
 
 #### 2. Add a task to your **gulpfile.js**:
 ```javascript
