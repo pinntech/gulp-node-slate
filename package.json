@@ -4,7 +4,8 @@
   "description": "node-slate as a gulp task",
   "main": "index.js",
   "scripts": {
-    "lint": "jshint index.js"
+    "lint": "jshint index.js",
+    "mocha": "mocha spec/mocha-spec.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,8 @@
   "homepage": "https://github.com/pinntech/gulp-node-slate",
   "devDependencies": {
     "gulp": "~3.9",
-    "jshint": "~2.9"
+    "jshint": "~2.9",
+    "mocha": "~3.2"
   },
   "dependencies": {
     "fs-extra": "~2.1",
