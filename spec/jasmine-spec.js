@@ -15,5 +15,5 @@ describe('gulp-node-slate plugin', () => {
         var actual =   typeof gulpNodeSlate;
         var expected = 'function';
         expect(actual).toEqual(expected);
-        })
+        });
     });

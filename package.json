@@ -4,9 +4,17 @@
   "description": "node-slate as a gulp task",
   "main": "index.js",
   "scripts": {
-    "lint": "jshint index.js",
+    "lint": "jshint index.js spec/*.js",
     "jasmine": "jasmine spec/jasmine-spec.js",
     "mocha": "mocha spec/mocha-spec.js"
+  },
+  "jshintConfig": {
+    "esversion": 6,
+    "node": true,
+    "jasmine": true,
+    "mocha": true,
+    "undef": true,
+    "unused": true
   },
   "repository": {
     "type": "git",
