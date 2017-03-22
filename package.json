@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "jshint index.js",
+    "jasmine": "jasmine spec/jasmine-spec.js",
     "mocha": "mocha spec/mocha-spec.js"
   },
   "repository": {
@@ -27,6 +28,7 @@
   "homepage": "https://github.com/pinntech/gulp-node-slate",
   "devDependencies": {
     "gulp": "~3.9",
+    "jasmine": "~2.5",
     "jshint": "~2.9",
     "mocha": "~3.2"
   },

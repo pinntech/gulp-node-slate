@@ -50,6 +50,8 @@ pwd
 update
 echo "Analyzing JS:"
 npm run lint
+echo "Running jasmine specs:"
+npm run jasmine
 echo "Running mocha specs:"
 npm run mocha
 getVersions
