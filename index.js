@@ -43,7 +43,7 @@ function gulpNodeSlate(options) {
         fs.copySync(folder.nodeSlateSrcOrig + '/images/logo.png', 'source/images/logo.png', { overwrite: false });
         if (!fs.existsSync('source/includes'))
             fs.copySync(folder.nodeSlateSrcOrig + '/includes', 'source/includes');
-        logExec('touch source/custom.scss');
+        fs.ensureFileSync('source/custom.scss');
         }
 
     function rebuildNodeSlateSourceFolder() {
