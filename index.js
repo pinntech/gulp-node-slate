@@ -1,9 +1,16 @@
+/////////////////////
+// gulp-node-slate //
+/////////////////////
+
+'use strict';
+
 var fs =      require('fs-extra');
 var gutil =   require('gulp-util');
 var through = require('through2');
 var exec =    require('child_process').execFileSync;
 
 var pluginName = 'gulp-node-slate';
+module.exports = gulpNodeSlate;
 
 function gulpNodeSlate(options) {
     options = options || {};
@@ -56,16 +63,17 @@ function gulpNodeSlate(options) {
         fs.copySync(folder.nodeSlateBuild, 'build');
         }
 
-    setupNodeSlate();
-    setupCustomFolder();
-    rebuildNodeSlateSourceFolder();
-    generateApiDocs();
-
     function transform(file, encoding, done) {
-        this.push(file);
+        done(null, file);
+        }
+
+    function completion(done) {
+        setupNodeSlate();
+        setupCustomFolder();
+        rebuildNodeSlateSourceFolder();
+        generateApiDocs();
         done();
         }
-    return through.obj(transform);  //return stream
-    }
 
-module.exports = gulpNodeSlate;  //Node.js module system
+    return through.obj(transform, completion);  //return stream
+    }
