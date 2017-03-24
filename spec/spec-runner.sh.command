@@ -29,6 +29,7 @@ showVersions() {
     echo "    $versionReleased (released)"
     echo
     echo "To publish release:"
+    echo "    cd $projectHome"
     echo "    git tag -af $versionRemote -m release"
     echo "    git remote -v"
     echo "    git push origin --tags --force"
