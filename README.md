@@ -6,6 +6,10 @@
 # gulp-node-slate
 *[node-slate](https://github.com/sdelements/node-slate) as a gulp task*
 
+[![npm version](https://badge.fury.io/js/gulp-node-slate.svg)](https://badge.fury.io/js/gulp-node-slate)
+&nbsp;
+[![dependencies Status](https://david-dm.org/pinntech/gulp-node-slate/status.svg)](https://david-dm.org/pinntech/gulp-node-slate)
+
 ## A) Lightning quick demo
 
 Don't have an existing gulp project?  Just want to experiment with no commitment?
