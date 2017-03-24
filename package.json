@@ -35,6 +35,7 @@
   },
   "homepage": "https://github.com/pinntech/gulp-node-slate",
   "devDependencies": {
+    "event-stream": "~3.3",
     "gulp": "~3.9",
     "jasmine": "~2.5",
     "jshint": "~2.9",

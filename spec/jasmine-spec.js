@@ -11,9 +11,11 @@ var gulpNodeSlate = require('../index.js');
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 describe('gulp-node-slate plugin', () => {
+
     it('is exported as a function', () => {
         var actual =   typeof gulpNodeSlate;
         var expected = 'function';
         expect(actual).toEqual(expected);
         });
+
     });

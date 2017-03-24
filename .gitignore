@@ -1,5 +1,7 @@
-# Downloaded files
+# Downloaded and generated files
 /node_modules/
+/source/
+/build/
 
 # Extraneous system files
 .DS_Store
