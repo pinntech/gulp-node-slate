@@ -22,6 +22,11 @@ describe('The gulp-node-slate plugin', () => {
         assert.equal(actual, expected);
         });
 
+    it('throws an error when given a bogus configuration', () => {
+        function callPluginWithBogusConfig() { gulpNodeSlate('bogus!'); }
+        assert.throws(callPluginWithBogusConfig, /Options parameter must be an object/);
+        });
+
     });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

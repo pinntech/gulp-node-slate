@@ -15,7 +15,7 @@ module.exports = gulpNodeSlate;
 function gulpNodeSlate(options) {
     options = options || {};
     if (typeof options !== 'object')
-        throw new gutil.PluginError(pluginName, 'Options must be an object');
+        throw new gutil.PluginError(pluginName, 'Options parameter must be an object');
 
     var folder = {
         nodeSlate:        'node_modules/node-slate',
