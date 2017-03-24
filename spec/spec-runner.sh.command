@@ -13,13 +13,10 @@ update() {
     which node || alert "Need to install node: https://nodejs.org"
     echo "Node.js $(node --version)"
     npm install
-    npm update
-    npm outdated
     echo
     }
 
-getVersions() {
-    cd $projectHome
+showVersions() {
     echo "Local changes:"
     git status --short
     versionLocal=v$(grep '"version"' package.json | awk -F'"' '{print $4}')
@@ -31,9 +28,6 @@ getVersions() {
     echo "    $versionRemote (checked in)"
     echo "    $versionReleased (released)"
     echo
-    }
-
-instructions() {
     echo "To publish release:"
     echo "    git tag -af $versionRemote -m release"
     echo "    git remote -v"
@@ -48,11 +42,12 @@ echo "===================="
 cd $projectHome
 pwd
 update
+showVersions
 echo "Analyzing JS:"
 npm run lint
 echo "Running jasmine specs:"
 npm run jasmine
 echo "Running mocha specs:"
 npm run mocha
-getVersions
-instructions
+sleep 2
+open build/index.html
