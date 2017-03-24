@@ -9,6 +9,7 @@
 
 var assert =        require('assert');
 var es =            require('event-stream');
+var fs =            require('fs');
 var File =          require('vinyl');
 var gulpNodeSlate = require('../index.js');
 
@@ -41,5 +42,10 @@ describe('Running the gulp-node-slate plugin', () => {
         pluginStream.write(mockFile);
         pluginStream.end();
         }).timeout(60000);  //in case node-slate needs to be downloaded
+
+    it('creates the API documentation web page', () => {
+        var webPage = 'build/index.html';
+        assert(fs.existsSync(webPage));
+        });
 
     });
