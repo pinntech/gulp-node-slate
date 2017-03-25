@@ -1,6 +1,6 @@
 {
   "name": "gulp-node-slate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "node-slate as a gulp task",
   "main": "index.js",
   "scripts": {
