@@ -31,6 +31,7 @@ describe('The gulp-node-slate plugin', () => {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 describe('Running the gulp-node-slate plugin', () => {
+    var options = { source: 'api-docs/input', build: 'api-docs/output' };
 
     it('passes through a file in the stream', (done) => {
         var mockFile = new File({ contents: es.readArray(['[A]', '[B]', '[C]']) });
@@ -42,14 +43,14 @@ describe('Running the gulp-node-slate plugin', () => {
                 }
             file.contents.pipe(es.wait(handleDataFromFile));
             }
-        var pluginStream = gulpNodeSlate();
+        var pluginStream = gulpNodeSlate(options);
         pluginStream.on('data', handleFileFromStream);
         pluginStream.write(mockFile);
         pluginStream.end();
         }).timeout(60000);  //in case node-slate needs to be downloaded
 
     it('creates the API documentation web page', () => {
-        var webPage = 'build/index.html';
+        var webPage = options.build + '/index.html';
         assert(fs.existsSync(webPage));
         });
 

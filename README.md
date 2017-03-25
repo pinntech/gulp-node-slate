@@ -70,7 +70,16 @@ source/
 Customize the files in the `source` folder to create your API documentation
 and then rerun `gulp slate`.
 
-## C) Note
+## C) Configuration
+Example passing in options:
+```javascript
+.pipe(slate({ source: 'api-docs/input', build: 'api-docs/output' }))
+```
+**Options:**
+* `source` &ndash; Relative path of the Slate API documentation input folder (default: `'source'`).
+* `build` &ndash; Relative path of the Slate API documentation output folder (default: `'build'`).
+
+## D) Note
 This project is very new.  If you have a question or suggestion, feel free to open an
 [issue](https://github.com/pinntech/gulp-node-slate/issues).
 

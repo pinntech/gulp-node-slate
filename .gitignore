@@ -2,6 +2,7 @@
 /node_modules/
 /source/
 /build/
+/api-docs/
 
 # Extraneous system files
 .DS_Store
