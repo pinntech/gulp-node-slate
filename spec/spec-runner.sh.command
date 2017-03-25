@@ -51,4 +51,4 @@ npm run jasmine
 echo "Running mocha specs:"
 npm run mocha
 sleep 2
-open build/index.html
+open api-docs/output/index.html
