@@ -16,10 +16,7 @@
     "undef": true,
     "unused": true
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pinntech/gulp-node-slate.git"
-  },
+  "repository": "pinntech/gulp-node-slate",
   "keywords": [
     "api-documentation",
     "javascript",
