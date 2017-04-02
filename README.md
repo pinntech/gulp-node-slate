@@ -6,7 +6,7 @@
 # gulp-node-slate
 *[node-slate](https://github.com/sdelements/node-slate) as a gulp task*
 
-[![npm version](https://badge.fury.io/js/gulp-node-slate.svg)](https://badge.fury.io/js/gulp-node-slate)
+[![npm](https://img.shields.io/npm/v/gulp-node-slate.svg)](https://github.com/pinntech/gulp-node-slate)
 &nbsp;
 [![dependencies Status](https://david-dm.org/pinntech/gulp-node-slate/status.svg)](https://david-dm.org/pinntech/gulp-node-slate)
 
