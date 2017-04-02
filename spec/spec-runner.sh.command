@@ -9,10 +9,14 @@
 package=https://raw.githubusercontent.com/pinntech/gulp-node-slate/master/package.json
 projectHome=$(cd $(dirname $0)/..; pwd)
 
-update() {
-    which node || alert "Need to install node: https://nodejs.org"
-    echo "Node.js $(node --version)"
+info() {
+    pwd
+    echo
+    echo "Node.js:"
+    which node || { echo "Need to install Node.js: https://nodejs.org"; exit; }
+    node --version
     npm install
+    npm outdated
     echo
     }
 
@@ -41,8 +45,7 @@ echo
 echo "Specification Runner"
 echo "===================="
 cd $projectHome
-pwd
-update
+info
 showVersions
 echo "Analyzing JS:"
 npm run lint
