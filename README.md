@@ -1,6 +1,7 @@
 <p align=center>
-    <img src=https://raw.githubusercontent.com/lord/img/master/logo-slate.png alt=logo><br>
-    Slate helps you create beautiful, intelligent, responsive API documentation.
+    <img src=https://raw.githubusercontent.com/lord/img/master/logo-slate.png width=200 alt=logo><br>
+    Slate helps you create beautiful, intelligent, responsive API documentation.<br>
+    <img src=https://raw.githubusercontent.com/lord/img/master/screenshot-slate.png width=700 alt=screenshot>
 </p>
 
 # gulp-node-slate
@@ -15,7 +16,7 @@
 Don't have an existing gulp project?  Just want to experiment with no commitment?
 
 #### Blindly enter these commands:
-```
+```shell
 $ mkdir my-api-docs
 $ cd my-api-docs
 $ npm init --yes
@@ -35,7 +36,7 @@ Otherwise, follow the steps below.
 ## B) Instructions
 
 #### 1. Install into your project:
-```
+```shell
 $ npm install gulp-node-slate --save-dev
 ```
 Alternatively, you can manually insert `"gulp-node-slate": "~0.0",` into the `devDependencies` of
@@ -49,7 +50,7 @@ gulp.task('slate', generateApiDocs);
 ```
 
 #### 3. Build and view the API documentation:
-```
+```shell
 $ gulp slate
 $ ls source
 $ open build/index.html
