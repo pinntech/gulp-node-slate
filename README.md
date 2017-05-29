@@ -10,6 +10,8 @@
 [![npm](https://img.shields.io/npm/v/gulp-node-slate.svg)](https://github.com/pinntech/gulp-node-slate)
 &nbsp;
 [![dependencies Status](https://david-dm.org/pinntech/gulp-node-slate/status.svg)](https://david-dm.org/pinntech/gulp-node-slate)
+&nbsp;
+[![Build Status](https://travis-ci.org/pinntech/gulp-node-slate.svg)](https://travis-ci.org/pinntech/gulp-node-slate)
 
 ## A) Lightning quick demo
 
