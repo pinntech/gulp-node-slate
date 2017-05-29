@@ -4,9 +4,8 @@
   "description": "node-slate as a gulp task",
   "main": "index.js",
   "scripts": {
-    "lint": "jshint index.js spec/*.js",
-    "jasmine": "jasmine spec/jasmine-spec.js",
-    "mocha": "mocha spec/mocha-spec.js"
+    "pretest": "jshint index.js spec/*.js",
+    "test": "mocha spec/mocha-spec.js"
   },
   "jshintConfig": {
     "esversion": 6,
@@ -36,8 +35,7 @@
     "event-stream": "~3.3",
     "gulp": "~3.9",
     "jasmine": "~2.5",
-    "jshint": "~2.9",
-    "mocha": "~3.2"
+    "jshint": "~2.9"
   },
   "dependencies": {
     "fs-extra": "~2.1",
