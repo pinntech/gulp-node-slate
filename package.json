@@ -1,46 +1,47 @@
 {
-  "name": "gulp-node-slate",
-  "version": "0.0.3",
-  "description": "node-slate as a gulp task",
-  "main": "index.js",
-  "scripts": {
-    "pretest": "jshint index.js spec/*.js",
-    "test": "mocha spec/mocha-spec.js"
-  },
-  "jshintConfig": {
-    "esversion": 6,
-    "node": true,
-    "jasmine": true,
-    "mocha": true,
-    "undef": true,
-    "unused": true
-  },
-  "repository": "pinntech/gulp-node-slate",
-  "keywords": [
-    "api-documentation",
-    "javascript",
-    "node-slate",
-    "nodejs",
-    "gulp",
-    "gulpplugin",
-    "slate",
-    "static-site-generator"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pinntech/gulp-node-slate/issues"
-  },
-  "homepage": "https://github.com/pinntech/gulp-node-slate",
-  "devDependencies": {
-    "event-stream": "~3.3",
-    "gulp": "~3.9",
-    "jshint": "~2.9",
-    "mocha": "~3.4"
-  },
-  "dependencies": {
-    "fs-extra": "~3.0",
-    "gulp-util": "~3.0",
-    "node-slate": "sdelements/node-slate",
-    "through2": "~2.0"
-  }
+    "name":        "gulp-node-slate",
+    "description": "node-slate as a gulp task",
+    "version":     "0.0.3",
+    "license":     "MIT",
+    "main":        "index.js",
+    "repository":  "pinntech/gulp-node-slate",
+    "bugs":        "https://github.com/pinntech/gulp-node-slate/issues",
+    "homepage":    "https://github.com/pinntech/gulp-node-slate",
+    "docs":        "https://github.com/pinntech/gulp-node-slate/blob/master/README.md",
+    "keywords": [
+        "api-documentation",
+        "javascript",
+        "node-slate",
+        "nodejs",
+        "gulp",
+        "gulpplugin",
+        "slate",
+        "static-site-generator"
+    ],
+    "author": { "name": "Pinn Technologies", "url": "http://pinn.ai" },
+    "scripts": {
+        "pretest": "jshint *.js",
+        "test":    "mocha spec.js"
+    },
+    "jshintConfig": {
+        "esversion": 6,
+        "strict":  "implied",
+        "node":    true,
+        "jasmine": true,
+        "mocha":   true,
+        "undef":   true,
+        "unused":  true
+    },
+    "devDependencies": {
+        "event-stream": "~3.3",
+        "gulp":         "~3.9",
+        "jshint":       "~2.9",
+        "mocha":        "~3.4"
+    },
+    "dependencies": {
+        "fs-extra":   "~3.0",
+        "gulp-util":  "~3.0",
+        "node-slate": "sdelements/node-slate",
+        "through2":   "~2.0"
+    }
 }

@@ -7,7 +7,7 @@
 #    $ chmod +x *.sh.command
 
 package=https://raw.githubusercontent.com/pinntech/gulp-node-slate/master/package.json
-projectHome=$(cd $(dirname $0)/..; pwd)
+projectHome=$(cd $(dirname $0); pwd)
 
 info() {
    cd $projectHome
@@ -17,7 +17,7 @@ info() {
    which node || { echo "Need to install Node.js: https://nodejs.org"; exit; }
    node --version
    test -d node_modules || npm install
-   npm update
+   #npm update
    npm outdated
    echo
    }

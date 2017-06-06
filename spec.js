@@ -11,7 +11,7 @@ var assert =        require('assert');
 var es =            require('event-stream');
 var fs =            require('fs');
 var File =          require('vinyl');
-var gulpNodeSlate = require('../index.js');
+var gulpNodeSlate = require('./index.js');
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 describe('The gulp-node-slate plugin', () => {
