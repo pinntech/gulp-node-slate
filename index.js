@@ -2,23 +2,21 @@
 // gulp-node-slate //
 /////////////////////
 
-'use strict';
+const fs =      require('fs-extra');
+const gutil =   require('gulp-util');
+const through = require('through2');
+const exec =    require('child_process').execFileSync;
 
-var fs =      require('fs-extra');
-var gutil =   require('gulp-util');
-var through = require('through2');
-var exec =    require('child_process').execFileSync;
-
-var pluginName = 'gulp-node-slate';
+const pluginName = 'gulp-node-slate';
 module.exports = gulpNodeSlate;
 
 function gulpNodeSlate(options) {
-    var defaults = { source: 'source', build: 'build' };
+    const defaults = { source: 'source', build: 'build' };
     if (options !== undefined && typeof options !== 'object')
         throw new gutil.PluginError(pluginName, 'Options parameter must be an object');
     console.log('settings:', Object.assign(defaults, options));
 
-    var folder = {
+    const folder = {
         nodeSlate:        'node_modules/node-slate',
         nodeSlateSrcOrig: 'node_modules/node-slate/source-original',
         nodeSlateSrc:     'node_modules/node-slate/source',
@@ -28,8 +26,8 @@ function gulpNodeSlate(options) {
         };
 
     function logExec(cmd, folder) {
-        var args = cmd.split(' ').splice(1, cmd.length - 1);
-        var options = folder ? { cwd: folder } : {};
+        const args = cmd.split(' ').splice(1, cmd.length - 1);
+        const options = folder ? { cwd: folder } : {};
         console.log(cmd + (folder ? ' ./' + folder : ''));
         console.log(exec(cmd.split(' ')[0], args, options).toString() || 'done');
         }
