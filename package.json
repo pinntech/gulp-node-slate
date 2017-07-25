@@ -25,12 +25,11 @@
     },
     "jshintConfig": {
         "esversion": 6,
-        "strict":  "implied",
-        "node":    true,
-        "jasmine": true,
-        "mocha":   true,
-        "undef":   true,
-        "unused":  true
+        "strict":    "implied",
+        "node":      true,
+        "mocha":     true,
+        "undef":     true,
+        "unused":    true
     },
     "devDependencies": {
         "event-stream": "~3.3",
@@ -39,9 +38,9 @@
         "mocha":        "~3.4"
     },
     "dependencies": {
-        "fs-extra":   "~3.0",
+        "fs-extra":   "~4.0",
         "gulp-util":  "~3.0",
-        "node-slate": "sdelements/node-slate",
+        "node-slate": "sdelements/node-slate#965c1af",
         "through2":   "~2.0"
     }
 }
