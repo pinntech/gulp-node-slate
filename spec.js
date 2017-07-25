@@ -4,7 +4,6 @@
 
 // Run:
 //  $ cd gulp-node-slate
-//  $ npm update
 //  $ npm test
 
 const assert =        require('assert');

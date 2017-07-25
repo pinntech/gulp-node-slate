@@ -10,6 +10,7 @@ package=https://raw.githubusercontent.com/pinntech/gulp-node-slate/master/packag
 projectHome=$(cd $(dirname $0); pwd)
 
 info() {
+   # Check for Node.js installation and download project dependencies
    cd $projectHome
    pwd
    echo
