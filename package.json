@@ -1,13 +1,13 @@
 {
-    "name":        "gulp-node-slate",
+    "name": "gulp-node-slate",
     "description": "node-slate as a gulp task",
-    "version":     "0.0.3",
-    "license":     "MIT",
-    "main":        "index.js",
-    "repository":  "pinntech/gulp-node-slate",
-    "bugs":        "https://github.com/pinntech/gulp-node-slate/issues",
-    "homepage":    "https://github.com/pinntech/gulp-node-slate",
-    "docs":        "https://github.com/pinntech/gulp-node-slate/blob/master/README.md",
+    "version": "0.0.3",
+    "license": "MIT",
+    "main": "index.js",
+    "repository": "pinntech/gulp-node-slate",
+    "bugs": "https://github.com/pinntech/gulp-node-slate/issues",
+    "homepage": "https://github.com/pinntech/gulp-node-slate",
+    "docs": "https://github.com/pinntech/gulp-node-slate/blob/master/README.md",
     "keywords": [
         "api-documentation",
         "javascript",
@@ -18,29 +18,32 @@
         "slate",
         "static-site-generator"
     ],
-    "author": { "name": "Pinn Technologies", "url": "http://pinn.ai" },
+    "author": {
+        "name": "Pinn Technologies",
+        "url": "http://pinn.ai"
+    },
     "scripts": {
         "pretest": "jshint *.js",
-        "test":    "mocha spec.js"
+        "test": "mocha spec.js"
     },
     "jshintConfig": {
         "esversion": 6,
-        "strict":    "implied",
-        "node":      true,
-        "mocha":     true,
-        "undef":     true,
-        "unused":    true
+        "strict": "implied",
+        "node": true,
+        "mocha": true,
+        "undef": true,
+        "unused": true
     },
     "devDependencies": {
         "event-stream": "~3.3",
-        "gulp":         "~3.9",
-        "jshint":       "~2.9",
-        "mocha":        "~3.5"
+        "gulp": "~3.9",
+        "jshint": "~2.9",
+        "mocha": "~3.5"
     },
     "dependencies": {
-        "fs-extra":   "~4.0",
-        "gulp-util":  "~3.0",
+        "fs-extra": "~4.0",
+        "gulp-util": "~3.0",
         "node-slate": "sdelements/node-slate#965c1af",
-        "through2":   "~2.0"
+        "through2": "~2.0"
     }
 }
