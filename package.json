@@ -34,16 +34,16 @@
         "node": true,
         "mocha": true
     },
+    "dependencies": {
+        "fs-extra": "~4.0",
+        "gulp-util": "~3.0",
+        "node-slate": "github:sdelements/node-slate#965c1af",
+        "through2": "~2.0"
+    },
     "devDependencies": {
         "event-stream": "~3.3",
         "gulp": "~3.9",
         "jshint": "~2.9",
-        "mocha": "~3.5"
-    },
-    "dependencies": {
-        "fs-extra": "~4.0",
-        "gulp-util": "~3.0",
-        "node-slate": "sdelements/node-slate#965c1af",
-        "through2": "~2.0"
+        "mocha": "~4.0"
     }
 }
