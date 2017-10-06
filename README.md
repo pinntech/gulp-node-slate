@@ -25,11 +25,12 @@ $ npm init --yes
 $ npm install gulp --save-dev
 $ npm install gulp-node-slate --save-dev
 $ cat > gulpfile.js << EOF
-var gulp =  require('gulp');
-var slate = require('gulp-node-slate');
-gulp.task('default', function() { return gulp.src([]).pipe(slate()); });
+const gulp =  require('gulp');
+const slate = require('gulp-node-slate');
+function generateApiDocs() { return gulp.src([]).pipe(slate()); }
+gulp.task('slate', generateApiDocs);
 EOF
-$ gulp
+$ node node_modules/gulp/bin/gulp.js slate
 $ open build/index.html
 ```
 
@@ -46,7 +47,7 @@ your **package.json** and then run `npm install`.
 
 #### 2. Add a task to your **gulpfile.js**:
 ```javascript
-var slate = require('gulp-node-slate');
+const slate = require('gulp-node-slate');
 function generateApiDocs() { return gulp.src([]).pipe(slate()); }
 gulp.task('slate', generateApiDocs);
 ```
