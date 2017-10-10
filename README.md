@@ -84,9 +84,9 @@ Example of passing in options:
 * `build` &ndash; Relative path to the Slate API documentation output folder (default: `'build'`).
 
 ## E) Notes
-1. If you want to contribute to the project, fork it and then run the `spec/spec-runner.sh.command`
+1. If you want to contribute to the project, fork it and then run the `spec-runner.sh.command`
 script and examine the contents of the `api-docs` folder.  Pull requests are welcome.
-1. If you have a question or suggestion, feel free to open an
+1. If you have a question, suggestion, or bug to report, open an
 [issue](https://github.com/pinntech/gulp-node-slate/issues).
 
 ---
