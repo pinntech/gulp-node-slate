@@ -18,7 +18,7 @@ info() {
    which node || { echo "Need to install Node.js: https://nodejs.org"; exit; }
    node --version
    test -d node_modules || npm install
-   #npm update
+   npm update
    npm outdated
    echo
    }
@@ -42,6 +42,11 @@ showVersions() {
    echo "   git remote -v"
    echo "   git push origin --tags --force"
    echo "   npm publish"
+   echo
+   echo "To more quickly just run tests:"
+   echo "   cd $projectHome"
+   echo "   npm test"
+   echo "   open api-docs/output/index.html"
    echo
    }
 
