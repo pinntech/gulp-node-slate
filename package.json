@@ -20,7 +20,7 @@
     ],
     "author": {
         "name": "Pinn Technologies",
-        "url": "http://pinn.ai"
+        "url": "https://pinn.ai"
     },
     "scripts": {
         "pretest": "jshint *.js",
