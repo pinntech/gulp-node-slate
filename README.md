@@ -7,9 +7,11 @@
 # gulp-node-slate
 *[node-slate](https://github.com/sdelements/node-slate) as a gulp task*
 
-[![npm](https://img.shields.io/npm/v/gulp-node-slate.svg)](https://github.com/pinntech/gulp-node-slate)
+[![npm](https://img.shields.io/npm/v/gulp-node-slate.svg)](https://www.npmjs.com/package/gulp-node-slate)
 &nbsp;
 [![dependencies Status](https://david-dm.org/pinntech/gulp-node-slate/status.svg)](https://david-dm.org/pinntech/gulp-node-slate)
+&nbsp;
+[![Known Vulnerabilities](https://snyk.io/test/github/pinntech/gulp-node-slate/badge.svg)](https://snyk.io/test/github/pinntech/gulp-node-slate)
 &nbsp;
 [![Build Status](https://travis-ci.org/pinntech/gulp-node-slate.svg)](https://travis-ci.org/pinntech/gulp-node-slate)
 
