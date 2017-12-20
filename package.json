@@ -35,9 +35,9 @@
         "mocha": true
     },
     "dependencies": {
-        "fs-extra": "~4.0",
+        "fs-extra": "~5.0",
         "gulp-util": "~3.0",
-        "node-slate": "github:sdelements/node-slate#10e35b3",
+        "node-slate": "~1.4",
         "through2": "~2.0"
     },
     "devDependencies": {
