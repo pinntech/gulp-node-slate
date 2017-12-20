@@ -1,7 +1,7 @@
 {
     "name": "gulp-node-slate",
     "description": "node-slate as a gulp task",
-    "version": "0.0.3",
+    "version": "1.0.0",
     "license": "MIT",
     "main": "index.js",
     "repository": "pinntech/gulp-node-slate",
