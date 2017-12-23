@@ -5,7 +5,7 @@
 </p>
 
 # gulp-node-slate
-*[node-slate](https://github.com/sdelements/node-slate) as a gulp task*
+*[node-slate](https://github.com/dpilafian/node-slate) as a gulp task*
 
 [![npm](https://img.shields.io/npm/v/gulp-node-slate.svg)](https://www.npmjs.com/package/gulp-node-slate)
 &nbsp;
