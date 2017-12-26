@@ -8,6 +8,7 @@
 
 package=https://raw.githubusercontent.com/pinntech/gulp-node-slate/master/package.json
 projectHome=$(cd $(dirname $0); pwd)
+webPage=api-docs/output/index.html
 
 info() {
    # Check for Node.js installation and download project dependencies
@@ -43,18 +44,22 @@ showVersions() {
    echo "   git push origin --tags --force"
    echo "   npm publish"
    echo
+   }
+
+openBrowser() {
    echo "To more quickly just run tests:"
    echo "   cd $projectHome"
    echo "   npm test"
-   echo "   open api-docs/output/index.html"
+   echo "   open $webPage  #use Chrome or Firefox"  #macOS Safari encounters: SecurityError (DOM Exception 18)
    echo
+   sleep 2
+   open $webPage
    }
 
 echo
 echo "Specification Runner"
 echo "===================="
 info
-showVersions
 npm test
-sleep 2
-open api-docs/output/index.html
+showVersions
+openBrowser
