@@ -31,7 +31,7 @@ function gulpNodeSlate(options) {
         if (folder)
             options.cwd = folder;
         console.log(cmd + (folder ? ' ./' + folder : ''));
-        console.log(exec(cmd.split(' ')[0], args, options).toString() || 'done');
+        exec(cmd.split(' ')[0], args, options);
         }
 
     function setupNodeSlate() {
