@@ -37,13 +37,13 @@
     "dependencies": {
         "fs-extra": "~5.0",
         "gulp-util": "~3.0",
-        "node-slate": "~1.4",
+        "node-slate": "~1.6",
         "through2": "~2.0"
     },
     "devDependencies": {
         "event-stream": "~3.3",
         "gulp": "~3.9",
         "jshint": "~2.9",
-        "mocha": "~4.0"
+        "mocha": "~4.1"
     }
 }
