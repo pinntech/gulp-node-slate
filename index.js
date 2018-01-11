@@ -27,7 +27,9 @@ function gulpNodeSlate(options) {
 
     function logExec(cmd, folder) {
         const args = cmd.split(' ').splice(1, cmd.length - 1);
-        const options = folder ? { cwd: folder } : {};
+        const options = { stdio: 'inherit' };
+        if (folder)
+            options.cwd = folder;
         console.log(cmd + (folder ? ' ./' + folder : ''));
         console.log(exec(cmd.split(' ')[0], args, options).toString() || 'done');
         }
