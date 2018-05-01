@@ -44,6 +44,6 @@
         "event-stream": "~3.3",
         "gulp": "~3.9",
         "jshint": "~2.9",
-        "mocha": "~4.1"
+        "mocha": "~5.1"
     }
 }
