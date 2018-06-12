@@ -35,15 +35,15 @@
         "mocha": true
     },
     "dependencies": {
-        "fs-extra": "~5.0",
+        "fs-extra": "~6.0",
         "gulp-util": "~3.0",
         "node-slate": "~1.6",
         "through2": "~2.0"
     },
     "devDependencies": {
         "event-stream": "~3.3",
-        "gulp": "~3.9",
+        "gulp": "~4.0",
         "jshint": "~2.9",
-        "mocha": "~5.1"
+        "mocha": "~5.2"
     }
 }
