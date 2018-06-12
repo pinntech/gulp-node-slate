@@ -36,7 +36,6 @@
     },
     "dependencies": {
         "fs-extra": "~6.0",
-        "gulp-util": "~3.0",
         "node-slate": "~1.6",
         "through2": "~2.0"
     },
@@ -44,6 +43,7 @@
         "event-stream": "~3.3",
         "gulp": "~4.0",
         "jshint": "~2.9",
-        "mocha": "~5.2"
+        "mocha": "~5.2",
+        "plugin-error": "~1.0"
     }
 }

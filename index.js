@@ -2,10 +2,10 @@
 // gulp-node-slate //
 /////////////////////
 
-const fs =      require('fs-extra');
-const gutil =   require('gulp-util');
-const through = require('through2');
-const exec =    require('child_process').execFileSync;
+const fs =          require('fs-extra');
+const through =     require('through2');
+const exec =        require('child_process').execFileSync;
+const PluginError = require('plugin-error');
 
 const pluginName = 'gulp-node-slate';
 module.exports = gulpNodeSlate;
@@ -13,7 +13,7 @@ module.exports = gulpNodeSlate;
 function gulpNodeSlate(options) {
     const defaults = { source: 'source', build: 'build' };
     if (options !== undefined && typeof options !== 'object')
-        throw new gutil.PluginError(pluginName, 'Options parameter must be an object');
+        throw new PluginError(pluginName, 'Options parameter must be an object');
     console.log('settings:', Object.assign(defaults, options));
 
     const folder = {
