@@ -9,7 +9,7 @@
 const assert =         require('assert');
 const es =             require('event-stream');
 const fs =             require('fs');
-const ReadableStream = require('stream').Readable;
+const stringToStream = require('string-to-stream');
 const Vinyl =          require('vinyl');
 const gulpNodeSlate =  require('./index.js');
 
@@ -35,9 +35,7 @@ describe('Running the gulp-node-slate plugin', () => {
     const oneMinute = 60 * 1000;
 
     it('passes through a file in the stream', (done) => {
-        const mockFile = new Vinyl({ contents: new ReadableStream() });
-        mockFile.contents.push('node-slate as a gulp task!');
-        mockFile.contents.push(null);  //EOF
+        const mockFile = new Vinyl({ contents: stringToStream('node-slate as a gulp task!') });
         function handleFileFromStream(file) {
             assert(file.isStream());
             function handleDataFromFile(err, data) {
