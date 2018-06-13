@@ -6,11 +6,12 @@
 //  $ cd gulp-node-slate
 //  $ npm test
 
-const assert =        require('assert');
-const es =            require('event-stream');
-const fs =            require('fs');
-const File =          require('vinyl');
-const gulpNodeSlate = require('./index.js');
+const assert =         require('assert');
+const es =             require('event-stream');
+const fs =             require('fs');
+const ReadableStream = require('stream').Readable;
+const Vinyl =          require('vinyl');
+const gulpNodeSlate =  require('./index.js');
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 describe('The gulp-node-slate plugin', () => {
@@ -34,11 +35,13 @@ describe('Running the gulp-node-slate plugin', () => {
     const oneMinute = 60 * 1000;
 
     it('passes through a file in the stream', (done) => {
-        const mockFile = new File({ contents: es.readArray(['[A]', '[B]', '[C]']) });
+        const mockFile = new Vinyl({ contents: new ReadableStream() });
+        mockFile.contents.push('node-slate as a gulp task!');
+        mockFile.contents.push(null);  //EOF
         function handleFileFromStream(file) {
             assert(file.isStream());
             function handleDataFromFile(err, data) {
-                assert.equal(data, '[A][B][C]');
+                assert.equal(data.toString(), 'node-slate as a gulp task!');
                 done();
                 }
             file.contents.pipe(es.wait(handleDataFromFile));
