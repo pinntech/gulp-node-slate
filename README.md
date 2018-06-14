@@ -24,12 +24,12 @@ Don't have an existing gulp project?  Just want to experiment with no commitment
 $ mkdir my-api-docs
 $ cd my-api-docs
 $ npm init --yes
-$ npm install gulp --save-dev
+$ npm install gulp@4 --save-dev
 $ npm install gulp-node-slate --save-dev
 $ cat > gulpfile.js << EOF
 const gulp =  require('gulp');
 const slate = require('gulp-node-slate');
-function generateApiDocs() { return gulp.src([]).pipe(slate()); }
+function generateApiDocs() { return gulp.src('.').pipe(slate()); }
 gulp.task('slate', generateApiDocs);
 EOF
 $ node node_modules/gulp/bin/gulp.js slate
